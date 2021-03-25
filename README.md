@@ -15,3 +15,5 @@ Packages are exclusively for:
 Xubuntu 18.03
 
 Debian stretch
+# Fedora
+Packages will be converted from deb to rpm
