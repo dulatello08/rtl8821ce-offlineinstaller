@@ -24,7 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Run a multi-line script
+      - name: pre
+        run: mkdir -p $BUILDDIR
+      - name : alien
+        working-directory :  ${{ env.BUILDDIR }}
         run: |
           cd driver1/Ubuntu/packages
           sleep 2s
